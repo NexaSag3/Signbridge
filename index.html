@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign Bridge | GooD team</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
 </head>
 <body>
   <header class="container">
@@ -65,7 +66,7 @@
         <article class="member-card"><img src="photos/arlan.jpg" alt="Arlan Kassymkhanov" /><h4>Arlan Kassymkhanov</h4><p data-lang="role5">Hardware Engineer</p></article>
       </div>
     </section>
-      <h2 class="section-title" data-lang="aboutTitle"><span class="icon">💡</span> About us</h2>
+      <h2 id="about" class="section-title" data-lang="aboutTitle"><span class="icon">💡</span> About us</h2>
       <div class="grid-2">
         <article class="card">
           <h3 data-lang="missionTitle">Mission</h3>
@@ -107,8 +108,8 @@
         <article class="tech-card">
           <h4 data-lang="hwTitle">Hardware</h4>
           <ul>
-            <li>Arduino UNO</li>
-            <li>Raspberry Pi 4</li>
+            <li>Arduino Mega</li>
+            <li>Raspberry Pi 5</li>
             <li>Flex sensors</li>
             <li>USB camera</li>
           </ul>
@@ -119,7 +120,7 @@
             <li>Python 3.12+</li>
             <li>MediaPipe ML</li>
             <li>OpenCV</li>
-            <li>Flask API</li>
+            <li>Numpy</li>
           </ul>
         </article>
         <article class="tech-card">
@@ -137,29 +138,29 @@
       <h2 class="section-title" data-lang="roadmapTitle"><span class="icon">🗺️</span> Roadmap</h2>
       <div class="roadmap-container">
         <div class="roadmap-item">
-          <div class="roadmap-icon">�</div>
-          <h3 data-lang="phase0Title">Phase 0: Research & Planning</h3>
-          <p data-lang="phase0Desc">Conduct in-depth market research, user interviews with deaf community, and technical feasibility studies to lay a strong foundation.</p>
+          <div class="roadmap-icon">✅</div>
+          <h3 data-lang="phase0Title">Phase 0: Research and Planning</h3>
+          <p data-lang="phase0Desc">We studied the communication barriers of sign language for 70 million deaf people worldwide. We surveyed the deaf community in Kazakhstan. We selected the hardware: Arduino Mega, flex sensors, and Raspberry Pi. We designed the system: a smart glove combined with an AI camera.</p>
         </div>
         <div class="roadmap-item">
-          <div class="roadmap-icon">🚀</div>
+          <div class="roadmap-icon">✅</div>
           <h3 data-lang="phase1Title">Phase 1: Prototype Development</h3>
-          <p data-lang="phase1Desc">Build and rigorously test core hardware-software integration, ensuring high accuracy and reliability in gesture recognition.</p>
+          <p data-lang="phase1Desc">We created a glove with 5 flex sensors. Arduino Mega was used to read the sensor data. We trained a database of 20 gestures (Russian and English). We also added voice output.</p>
         </div>
         <div class="roadmap-item">
-          <div class="roadmap-icon">📱</div>
-          <h3 data-lang="phase2Title">Phase 2: Mobile Companion App</h3>
-          <p data-lang="phase2Desc">Develop an intuitive mobile app for seamless settings management, remote control, and real-time feedback to enhance user experience.</p>
+          <div class="roadmap-icon">✅</div>
+          <h3 data-lang="phase2Title">Phase 2: AI Camera Integration</h3>
+          <p data-lang="phase2Desc">We used Raspberry Pi 5 with a camera. MediaPipe was integrated to track 63 hand landmarks. This allowed gesture recognition without the glove. Both modes work together.</p>
         </div>
         <div class="roadmap-item">
-          <div class="roadmap-icon">🧪</div>
-          <h3 data-lang="phase3Title">Phase 3: Beta Testing & Iteration</h3>
-          <p data-lang="phase3Desc">Launch beta program with diverse user groups, gather comprehensive feedback, and iterate on design and functionality for optimal accessibility.</p>
+          <div class="roadmap-icon">⚙️</div>
+          <h3 data-lang="phase3Title">Phase 3: Testing and Calibration</h3>
+          <p data-lang="phase3Desc">The task is to test the system with real users. It is necessary to increase accuracy to 95% or higher, calibrate the sensors for different hand sizes, add an OLED display, and optimize the system speed.</p>
         </div>
         <div class="roadmap-item">
-          <div class="roadmap-icon">🌍</div>
-          <h3 data-lang="phase4Title">Phase 4: Global Launch & Scaling</h3>
-          <p data-lang="phase4Desc">Scale production, expand language support, and launch globally with partnerships, ensuring widespread adoption and continuous improvement.</p>
+          <div class="roadmap-icon">⚙️</div>
+          <h3 data-lang="phase4Title">Phase 4: Feature Expansion</h3>
+          <p data-lang="phase4Desc">The task is to add phrase recognition and improve the algorithm so it adapts to the user. It is also necessary to reduce latency and add quick access to frequently used gestures.</p>
         </div>
       </div>
     </section>
@@ -181,221 +182,13 @@
       </div>
       <div class="contact-cta">
         <p data-lang="contactCta">📧 Contact us for partnership opportunities</p>
-        <p class="contact-info"><strong data-lang="emailLabel">Email:</strong> team@signbridge.io</p>
-        <p class="contact-info"><strong data-lang="phoneLabel">Phone:</strong> +7 (123) 456-78-90</p>
+        <p class="contact-info"><strong data-lang="emailLabel">Email:</strong> good.signbridge@gmail.com</p>
+        <a href="https://wa.me/77785410176" class="contact-info"><strong data-lang="phoneLabel">WhatsApp:</strong> +7(778) 541-01-76</a>
       </div>
     </section>
   </main>
   <footer class="container">
     <p>2026 GooD team • Sign Bridge</p>
   </footer>
-  <script>
-    const translations = {
-      en: {
-        heading: 'Sign Bridge: Assistive solution for deaf users',
-        subheading: 'Sign Bridge helps deaf-mute people communicate without interpreter, using glove and camera AI modes with Arduino and Raspberry Pi.',
-        btn1: 'About',
-        btn2: 'Members section',
-        btn3: 'Get Started',
-        aboutTitle: 'About us',
-        aboutText: 'GooD team has built Sign Bridge as a low-cost, accessible sign interpretation system for hearing-impaired users.',
-        missionTitle: 'Mission',
-        missionDesc: 'Create low-cost, infinitely adaptable assistive tech that makes everyday communication accessible.',
-        visionTitle: 'Vision',
-        visionDesc: 'Become a first-choice platform for gesture-to-speech conversion with IoT glove and AI camera.',
-        feature1: '• AI gesture recognition (MediaPipe) with 95% accuracy.',
-        feature2: '• Arduino flex-sensor glove, real-time feedback, and Bluetooth connection.',
-        feature3: '• Raspberry Pi camera mode for no-glove usage leveraging neural inference.',
-        feature4: '• 3-mode output: speech, text, mobile remote control.',
-        videoDemoText: 'Realtime gesture recognition demo with visualization.',
-        gestureDemoTitle: 'Gesture Detection Demo',
-        howItWorksTitle: 'How it works',
-        step1Title: 'Wear the Glove',
-        step1Desc: 'Put on the Arduino-powered flex-sensor glove for gesture detection.',
-        step2Title: 'Make Gestures',
-        step2Desc: 'Perform sign language gestures, captured by sensors and AI.',
-        step3Title: 'Get Output',
-        step3Desc: 'Receive speech, text, or control signals instantly.',
-        teamTitle: 'Team members',
-        role1: 'Software Engineer',
-        role2: 'Designer',
-        role3: 'Web Developer',
-        role4: 'Content Creator',
-        role5: 'Hardware Engineer',
-        mentorsTitle: 'Our Mentor',
-        mentorRole: 'Mentor',
-        role6: 'Mentor',
-        techStackTitle: 'Technology Stack',
-        hwTitle: 'Hardware',
-        softwareTitle: 'Software',
-        frontendTitle: 'Frontend',
-        sponsorsTitle: 'Our Partners & Sponsors',
-        sponsorsDesc: 'We are grateful for the support of our partners. Interested in joining us?',
-        sponsorText: 'You could be here',
-        contactCta: '📧 Contact us for partnership opportunities',
-        emailLabel: 'Email:',
-        phoneLabel: 'Phone:',
-        roadmapTitle: 'Roadmap',
-        phase0Title: 'Phase 0: Research & Planning',
-        phase0Desc: 'Conduct in-depth market research, user interviews with deaf community, and technical feasibility studies to lay a strong foundation.',
-        phase1Title: 'Phase 1: Prototype Development',
-        phase1Desc: 'Build and rigorously test core hardware-software integration, ensuring high accuracy and reliability in gesture recognition.',
-        phase2Title: 'Phase 2: Mobile Companion App',
-        phase2Desc: 'Develop an intuitive mobile app for seamless settings management, remote control, and real-time feedback to enhance user experience.',
-        phase3Title: 'Phase 3: Beta Testing & Iteration',
-        phase3Desc: 'Launch beta program with diverse user groups, gather comprehensive feedback, and iterate on design and functionality for optimal accessibility.',
-        phase4Title: 'Phase 4: Global Launch & Scaling',
-        phase4Desc: 'Scale production, expand language support, and launch globally with partnerships, ensuring widespread adoption and continuous improvement.',
-        prototypeTitle: 'Prototype Glove + Demo',
-        prototypeGloveTitle: 'Prototype Glove',
-        prototypeText: 'Hardware prototype with embedded flex sensors and Arduino data acquisition.',
-        videoDemoText: 'Realtime gesture recognition demo with visualization.'
-      },
-      ru: {
-        heading: 'Sign Bridge: помощь глухонемым',
-        subheading: 'Sign Bridge помогает глухонемым людям общаться без переводчика, используя режимы искусственного интеллекта в перчатках и камере с помощью Arduino и Raspberry Pi.',
-        btn1: 'О нас',
-        btn2: 'Команда',
-        btn3: 'Начать',
-        aboutTitle: 'О нас',
-        aboutText: 'Команда GooD создала Sign Bridge как доступную систему интерпретации жестов.',
-        missionTitle: 'Миссия',
-        missionDesc: 'Разрабатывать доступные технологии, упрощающие коммуникацию для людей с нарушением слуха.',
-        visionTitle: 'Видение',
-        visionDesc: 'Стать первой платформой для преобразования жестов в речь с помощью IoT и ИИ.',
-        feature1: '• Распознавание жестов (MediaPipe) с точностью 95%.',
-        feature2: '• Перчатка Arduino с flex-сенсорами, обратной связью и Bluetooth.',
-        feature3: '• Режим камеры Raspberry Pi без перчатки на основе нейросети.',
-        feature4: '• 3 режима вывода: голос, текст, удаленное управление с телефона.',
-        videoDemoText: 'Демонстрация распознавания жестов в реальном времени с визуализацией.',
-        gestureDemoTitle: 'Демонстрация распознавания жестов',
-        howItWorksTitle: 'Как это работает',
-        step1Title: 'Наденьте перчатку',
-        step1Desc: 'Наденьте перчатку с датчиками Arduino для обнаружения жестов.',
-        step2Title: 'Делайте жесты',
-        step2Desc: 'Выполняйте жесты языка жестов, захватываемые сенсорами и ИИ.',
-        step3Title: 'Получите вывод',
-        step3Desc: 'Получите речь, текст или сигналы управления мгновенно.',
-        teamTitle: 'Участники команды',
-        role1: 'Инженер программного обеспечения',
-        role2: 'Дизайнер',
-        role3: 'Веб-разработчик',
-        role4: 'Создатель контента',
-        role5: 'Инженер аппаратного обеспечения',
-        mentorsTitle: 'Наш ментор',
-        mentorRole: 'Ментор',
-        role6: 'Ментор',
-        techStackTitle: 'Технологический стек',
-        hwTitle: 'Аппаратура',
-        softwareTitle: 'Программное обеспечение',
-        frontendTitle: 'Фронтенд',
-        sponsorsTitle: 'Наши партнёры и спонсоры',
-        sponsorsDesc: 'Мы благодарны поддержке наших партнеров. Заинтересованы присоединиться?',
-        sponsorText: 'Вы могли бы быть здесь',
-        contactCta: '📧 Свяжитесь с нами для сотрудничества',
-        emailLabel: 'Электронная почта:',
-        phoneLabel: 'Телефон:',
-        roadmapTitle: 'Дорожная карта',
-        phase0Title: 'Фаза 0: Исследование и планирование',
-        phase0Desc: 'Провести глубокое исследование рынка, интервью с сообществом глухих и технические исследования feasibility для создания прочной основы.',
-        phase1Title: 'Фаза 1: Разработка прототипа',
-        phase1Desc: 'Создать и тщательно протестировать интеграцию аппаратного и программного обеспечения, обеспечивая высокую точность и надежность распознавания жестов.',
-        phase2Title: 'Фаза 2: Мобильное приложение-компаньон',
-        phase2Desc: 'Разработать интуитивное мобильное приложение для бесшовного управления настройками, удаленного контроля и обратной связи в реальном времени для улучшения пользовательского опыта.',
-        phase3Title: 'Фаза 3: Бета-тестирование и итерации',
-        phase3Desc: 'Запустить бета-программу с разнообразными группами пользователей, собрать всестороннюю обратную связь и итерировать дизайн и функциональность для оптимальной доступности.',
-        phase4Title: 'Фаза 4: Глобальный запуск и масштабирование',
-        phase4Desc: 'Масштабировать производство, расширить поддержку языков и запустить глобально с партнерствами, обеспечивая широкое принятие и непрерывное улучшение.',
-        prototypeTitle: 'Прототипная перчатка + демо',
-        prototypeGloveTitle: 'Прототипная перчатка',
-        prototypeText: 'Аппаратный прототип с встроенными flex-сенсорами и сбором данных через Arduino.',
-        videoDemoText: 'Демонстрация распознавания жестов в реальном времени с визуализацией.'
-      },
-      tr: {
-        heading: 'Sign Bridge: işitme kaybı çözümü',
-        subheading: 'Sign Bridge, Arduino ve Raspberry Pi ile eldiven ve kamera yapay zeka modlarını kullanarak işitme engelli kişilerin tercüman olmadan iletişim kurmasına yardımcı oluyor.',
-        btn1: 'Hakkımızda',
-        btn2: 'Üyeler',
-        btn3: 'Başla',
-        aboutTitle: 'Hakkımızda',
-        aboutText: 'GooD takımının Sign Bridge projesi işitme engelliler için tasarlandı.',
-        missionTitle: 'Misyon',
-        missionDesc: 'Herkes için iletişimi kolaylaştıran uygun fiyatlı, ölçeklenebilir yardımcı teknoloji geliştirmek.',
-        visionTitle: 'Vizyon',
-        visionDesc: 'Nesnelerin interneti eldiveni ve AI kamera ile jestten konuşmaya birinci tercih platform olmak.',
-        feature1: '• %95 doğruluk oranıyla jest tanıma (MediaPipe).',
-        feature2: '• Arduino flex sensör eldiven, gerçek zamanlı geri bildirim, Bluetooth.',
-        feature3: '• Eldivensiz kullanım için Raspberry Pi kamera modu, sinir ağı çıkarımı.',
-        feature4: '• 3 çıktı modu: konuşma, metin, mobil uzaktan kontrol.',
-        videoDemoText: 'Görselleştirme ile gerçek zamanlı jest tanıma demosu.',
-        gestureDemoTitle: 'Jest Algılama Demosu',
-        howItWorksTitle: 'Nasıl çalışıyor',
-        step1Title: 'Eldiveni giy',
-        step1Desc: 'Jest algılama için Arduino destekli flex sensörlü eldiveni giy.',
-        step2Title: 'Jest yap',
-        step2Desc: 'İşaret dili jestlerini sensörler ve AI tarafından yakala.',
-        step3Title: 'Çıktıyı al',
-        step3Desc: 'Konuşma, metin veya kontrol sinyallerini anında al.',
-        teamTitle: 'Takım üyeleri',
-        role1: 'Yazılım Mühendisi',
-        role2: 'Tasarımcı',
-        role3: 'Web Geliştirici',
-        role4: 'İçerik Oluşturucu',
-        role5: 'Donanım Mühendisi',
-        mentorsTitle: 'Mentorümüz',
-        mentorRole: 'Mentor',
-        role6: 'Mentor',
-        techStackTitle: 'Teknoloji Yığını',
-        hwTitle: 'Donanım',
-        softwareTitle: 'Yazılım',
-        frontendTitle: 'Ön Yüz',
-        sponsorsTitle: 'Ortaklarımız ve Sponsorlar',
-        sponsorsDesc: 'Ortaklarımızın desteğine teşekkür ederiz. Bize katılmak ilgilendiniz mi?',
-        sponsorText: 'Siz burada olabilirdiniz',
-        contactCta: '📧 Ortaklık fırsatları için bize ulaşın',
-        emailLabel: 'E-posta:',
-        phoneLabel: 'Telefon:',
-        roadmapTitle: 'Yol Haritası',
-        phase0Title: 'Aşama 0: Araştırma ve Planlama',
-        phase0Desc: 'Derinlemesine pazar araştırması, işitme engelli topluluğuyla kullanıcı görüşmeleri ve teknik uygulanabilirlik çalışmaları yaparak güçlü bir temel oluşturun.',
-        phase1Title: 'Aşama 1: Prototip Geliştirme',
-        phase1Desc: 'Çekirdek donanım-yazılım entegrasyonunu oluşturun ve jest tanımada yüksek doğruluk ve güvenilirlik sağlayarak titizlikle test edin.',
-        phase2Title: 'Aşama 2: Mobil Yardımcı Uygulama',
-        phase2Desc: 'Kesintisiz ayar yönetimi, uzaktan kontrol ve gerçek zamanlı geri bildirim için sezgisel bir mobil uygulama geliştirerek kullanıcı deneyimini geliştirin.',
-        phase3Title: 'Aşama 3: Beta Testi ve İterasyon',
-        phase3Desc: 'Çeşitli kullanıcı gruplarıyla beta programını başlatın, kapsamlı geri bildirim toplayın ve optimum erişilebilirlik için tasarım ve işlevselliği yineleyin.',
-        phase4Title: 'Aşama 4: Küresel Lansman ve Ölçeklendirme',
-        phase4Desc: 'Üretimi ölçeklendirin, dil desteğini genişletin ve ortaklıklarla küresel olarak lansman yaparak yaygın kabul ve sürekli iyileştirmeyi sağlayın.',
-        prototypeTitle: 'Prototip Eldiven + Demo',
-        prototypeGloveTitle: 'Prototip Eldiven',
-        prototypeText: 'Gömülü flex sensörleri ve Arduino veri toplama ile donanım prototipi.',
-        videoDemoText: 'Görselleştirme ile gerçek zamanlı jest tanıma demosu.'
-      }
-    };
-    const langSelect = document.getElementById('language');
-    const translatable = document.querySelectorAll('[data-lang]');
-    function setLanguage(lang) {
-      const map = translations[lang] || translations.en;
-      translatable.forEach(el => {
-        const key = el.getAttribute('data-lang');
-        if (map[key]) el.textContent = map[key];
-      });
-    }
-    langSelect.addEventListener('change', e => setLanguage(e.target.value));
-    setLanguage('en');
-
-    // Animation on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.section-block').forEach(section => {
-      observer.observe(section);
-    });
-  </script>
 </body>
 </html>
