@@ -1,78 +1,97 @@
 # 🤟 SignBridge
-### Real-Time Sign Language Translator
 
-SignBridge is an AI-powered web application designed to help bridge the communication gap between deaf or hard-of-hearing individuals and people who rely on spoken language.
+**SignBridge** is a web platform designed to demonstrate a concept of an AI-powered sign language translator.  
+The goal of the project is to help bridge the communication gap between deaf or hard-of-hearing individuals and people who rely on spoken language.
 
-The system uses computer vision and machine learning to detect hand gestures through a webcam and translate sign language into readable text and optional speech output in real time.
-
----
-
-## 🌍 Problem
-
-More than **70 million people worldwide use sign language as their primary form of communication**, yet most hearing individuals cannot understand it. This creates communication barriers in education, healthcare, workplaces, and everyday interactions.
-
-SignBridge aims to reduce this barrier by providing an accessible translation system that works directly in a web browser.
+This repository contains the **official project website**, which presents the idea, goals, and functionality of the SignBridge system.
 
 ---
 
-## 🚀 Features
+## 🌍 Project Idea
 
-- ✋ Real-time sign language recognition using webcam
-- 🤖 AI-based gesture detection
-- 💬 Sign → Text translation
-- 🔊 Optional Text-to-Speech output
-- 🌐 Browser-based application
-- ⚡ Fast real-time processing
+More than **70 million people worldwide use sign language**, but most hearing people cannot understand it.  
+This creates communication barriers in everyday life such as schools, hospitals, workplaces, and public services.
 
----
+**SignBridge** aims to solve this problem using modern technologies like:
 
-## 🧠 How It Works
+- Artificial Intelligence
+- Computer Vision
+- Gesture Recognition
 
-The system processes gestures in several stages:
-
-1. **Video Capture**  
-   The webcam captures live video of the user's hand gestures.
-
-2. **Hand Detection**  
-   Computer vision detects hand landmarks and tracks movement.
-
-3. **Gesture Recognition**  
-   A trained machine learning model classifies gestures.
-
-4. **Translation**  
-   The recognized gesture is converted into text.
-
-5. **Output**  
-   The translated message is displayed on the screen and can be spoken using text-to-speech.
+The system can recognize sign language gestures through a camera and convert them into **text or speech in real time**.
 
 ---
 
-## 🛠 Tech Stack
+## 🚀 Website
 
-### Frontend
-- React
-- TypeScript
-- TailwindCSS
+The website provides information about the project, including:
 
-### Backend
-- Python
-- FastAPI
+- 📖 Project overview  
+- 🎯 Mission and goals  
+- ⚙️ How the system works  
+- 🧠 Technologies used  
+- 👥 Team and project background  
 
-### AI / Computer Vision
-- MediaPipe
-- OpenCV
-- NumPy
-
-### Other
-- Web Speech API
-- WebSockets
+You can explore the project through the website interface.
 
 ---
 
-## 📦 Installation
+## 🧠 How SignBridge Works
 
-Clone the repository:
+The concept system works in several stages:
 
-```bash
-git clone https://github.com/NexaSag3/Signbridge.git
-cd Signbridge
+1. **Camera Input** – captures hand gestures.
+2. **Hand Detection** – identifies hand landmarks using computer vision.
+3. **Gesture Recognition** – AI model classifies the gesture.
+4. **Translation** – converts the gesture into text or speech.
+
+---
+
+## 🛠 Technologies
+
+The SignBridge concept is based on modern technologies such as:
+
+- Computer Vision
+- Machine Learning
+- Hand Tracking Algorithms
+- Web Technologies
+
+Possible tools used in development:
+
+- MediaPipe  
+- OpenCV  
+- Python  
+- JavaScript  
+
+---
+
+## 🎯 Project Goal
+
+The goal of SignBridge is to make communication **more accessible and inclusive** by providing a tool that allows people who do not know sign language to understand it easily.
+
+---
+
+## 🌎 Impact
+
+SignBridge could be used in:
+
+- Schools
+- Hospitals
+- Public services
+- Customer support
+- Everyday communication
+
+Helping millions of people communicate without barriers.
+
+---
+
+## 📌 Status
+
+This repository contains the **project website and presentation materials** for the SignBridge concept.
+
+---
+
+## ❤️ Vision
+
+Technology should connect people.  
+SignBridge is a step toward a world where **communication barriers no longer exist**.
