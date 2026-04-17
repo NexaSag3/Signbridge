@@ -199,6 +199,7 @@ header {
 .features-list p,
 .members-grid .member-card p {
   margin: .35rem 0;
+  white-space: pre-line;
 }
 
 .features-list {
